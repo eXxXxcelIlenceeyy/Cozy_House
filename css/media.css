@@ -2,7 +2,7 @@
     .container {
         max-width: 768px;
         margin: 0 auto;
-        padding: 0 30px;
+        padding: 0px 30px;
     }
 
     .hero {
@@ -13,7 +13,7 @@
     .hero__content {
         flex-grow: 1;
         flex-direction: column;
-        padding: 60px 56px 0 56px;
+        padding: 60px 56px 0px 56px;
         max-width: 570px;
         margin: 0 auto;
     }
