@@ -289,3 +289,137 @@ h6 {
     width: 270px;
     overflow: hidden;
 }
+
+/* HELP */
+
+.help {
+    font-family: var(--font-family);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+    padding: 80px 0 100px;
+}
+
+.help__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+}
+
+.help__title {
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: 35px;
+    max-width: 308px;
+}
+
+.help__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    row-gap: 55px;
+    flex-wrap: wrap;
+}
+
+.help__item {}
+
+.card {}
+
+.card__img-wrap {}
+
+.help__img-wrap {}
+
+.card__img {}
+
+.help__img {
+    margin-bottom: 30px;
+}
+
+.help__subtitle {
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: 20px;
+}
+
+/* DONATE */
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 100px;
+}
+
+.donate__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap-reverse;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donate__img-wrap {}
+
+.donate__img {}
+
+.donate__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 30px;
+    max-width: 380px;
+}
+
+.donate__title {
+    font-size: 35px;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    max-width: 300px;
+    text-align: left;
+}
+
+.donate__subtitle {
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+}
+
+.credit__card {
+    border-radius: 9px;
+    padding: 10px 15px;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.credit__img-wrap {}
+
+.credit__img {}
+
+.credit__subtitle {
+    font-size: 20px;
+}
+
+.donate__paragraph {
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-dark-m);
+}
