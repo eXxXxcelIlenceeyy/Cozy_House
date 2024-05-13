@@ -27,3 +27,13 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .help__list {
+        column-gap: 60px;
+    }
+
+    .help__item {
+        flex: 0 0 170px;
+    }
+}

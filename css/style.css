@@ -52,6 +52,7 @@ h6 {
 .wrapper {
     min-height: 100%;
     font-family: var(--font-family);
+    overflow: hidden;
 }
 
 .container {
@@ -125,6 +126,38 @@ h6 {
     font-size: 15px;
     color: var(--color-light-s);
     white-space: nowrap;
+}
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.burger__el,
+.burger__el::before,
+.burger__el::after {
+    display: block;
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 100%;
+}
+
+.burger__el::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.burger__el::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -301,6 +334,10 @@ h6 {
     padding: 80px 0 100px;
 }
 
+.help__container {
+    max-width: 1066px;
+}
+
 .help__content {
     display: flex;
     flex-direction: column;
@@ -327,14 +364,6 @@ h6 {
 }
 
 .help__item {}
-
-.card {}
-
-.card__img-wrap {}
-
-.help__img-wrap {}
-
-.card__img {}
 
 .help__img {
     margin-bottom: 30px;
@@ -423,3 +452,5 @@ h6 {
     font-size: 12px;
     color: var(--color-dark-m);
 }
+
+/* FOOTER */
