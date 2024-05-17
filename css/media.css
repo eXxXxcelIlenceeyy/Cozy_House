@@ -1,3 +1,22 @@
+:root {
+    --color-light-xl: #fff;
+    --color-light-l: #f6f6f6;
+    --color-light-s: #fafafa;
+    --color-dark-s: #cdcdcd;
+    --color-dark-m: #b2b2b2;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4c4c4c;
+    --color-dark-2xl: #444;
+    --color-dark-3xl: #292929;
+    --color-primary: #f1cdb3;
+    --color-primary-light: #fddcc4;
+    --start-screen-gradient-background: #211f20;
+    --footer-gradient-background: #211f20;
+
+    --font-family: "Georgia", sans-serif;
+    --second-family: "Arial", sans-serif;
+}
+
 @media (max-width: 925px) {
     .container {
         max-width: 768px;
@@ -29,6 +48,47 @@
 }
 
 @media (max-width: 768px) {
+    .nav {
+        background: var(--color-dark-3xl);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        text-align: center;
+    }
+
+    .nav:not(.active) {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .nav__link {
+        font-size: 32px;
+        line-height: 160%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active {
+        rotate: 90deg;
+    }
+
+    .burger__el {}
+
+    .help__container {}
+
     .help__list {
         column-gap: 60px;
     }
