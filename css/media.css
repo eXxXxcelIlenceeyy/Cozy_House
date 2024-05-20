@@ -97,3 +97,15 @@
         flex: 0 0 170px;
     }
 }
+
+@media (max-width: 480px) {
+    .slider__controls {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__control {
+        position: static;
+    }
+}

@@ -49,6 +49,46 @@ h6 {
     margin: 0;
 }
 
+.title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 44px;
+    color: var(--color-light-xl);
+    max-width: 310px;
+}
+
+.paragraph {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.btn {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    border-radius: 100px;
+    padding: 15px 45px;
+    display: inline-block;
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s;
+
+}
+
+.btn_bg_transparent {
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-light);
+    cursor: pointer;
+    border: 2px solid var(--color-primary-light);
+}
+
 .wrapper {
     min-height: 100%;
     font-family: var(--font-family);
@@ -194,38 +234,10 @@ h6 {
     margin-bottom: 42px;
 }
 
-.title {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 44px;
-    color: var(--color-light-xl);
-    max-width: 310px;
-}
-
-.paragraph {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-}
-
 .hero__paragraph {
     margin-bottom: 42px;
     margin-top: 0;
     color: var(--color-dark-s);
-}
-
-.btn {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 17px;
-    letter-spacing: 0.06em;
-    color: var(--color-dark-3xl);
-    border-radius: 100px;
-    padding: 15px 45px;
-    display: inline-block;
-    background: var(--color-primary);
-
 }
 
 .hero__btn {}
@@ -279,6 +291,8 @@ h6 {
     color: var(--color-dark-xl);
 }
 
+/* FRIENDS */
+
 .friends {
     background: var(--color-light-l);
     padding-top: 80px;
@@ -324,11 +338,41 @@ h6 {
     justify-content: space-between;
     max-width: 990px;
     margin: 0 auto;
+    column-gap: 90px;
+    overflow-x: scroll;
 }
 
 .friend {
     width: 270px;
+    border-radius: 9px;
+    background: #fafafa;
     overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    flex-shrink: 0;
+}
+
+.friend__img-wrap {
+    width: 100%;
+    height: 270px;
+    margin-bottom: 30px;
+}
+
+.friend__img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.friend__name {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.friends__btn-wrap {
+    text-align: center;
 }
 
 /* HELP */
